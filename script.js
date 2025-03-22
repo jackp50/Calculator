@@ -40,18 +40,11 @@ function operate(num1, operator, num2) {
     }
 }
 
-function gridRows(rowAmount) {
-    for (let i = 0; i < rowAmount; i++ ) {
+function buildGrid(squareAmount) {
+    for (let i = 1; i <= squareAmount; i++ ) {
         let grid = document.createElement("div");
-        grid.classList.add("row");
-        gridParent.appendChild(grid);
-
-    }
-}
-function gridColumn(columnAmount) {
-    for (let i = 0; i < columnAmount; i++ ) {
-        let grid = document.createElement("div");
-        grid.classList.add("column");
+        grid.classList.add("grid");
+        grid.textContent = i;
         gridParent.appendChild(grid);
     }
 }
@@ -67,5 +60,4 @@ container.appendChild(screenDiv);
 const gridParent = document.createElement("div");
 container.appendChild(gridParent);
 gridParent.id = "gridParent"
-gridRows(3);
-gridColumn(4);
+buildGrid(12);
