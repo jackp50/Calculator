@@ -17,7 +17,7 @@
 }
 
 #gridParent {
-    position: absolute;
+    
     display: flex;
     width: 500px;
     height: auto;
@@ -29,4 +29,28 @@
     border: 3px solid black;
     height: 100px;
     width: 100px;
+}
+
+#subtractButton {
+    border: 3px solid pink;
+}
+
+#addButton {
+    border: 3px solid pink;
+}
+
+#multiplyButton {
+    border: 3px solid pink;
+}
+
+#divideButton {
+    border: 3px solid pink;
+}
+
+#equalButton {
+    border: 3px solid pink;
+}
+
+#clearButton {
+    border: 3px solid pink;
 }
