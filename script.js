@@ -105,9 +105,22 @@ function buildGrid(squareAmount) {
     // make it a loop?
     console.log(finalGrid)
     for (let a = 0; a < finalGrid.length; a++) {
+        if (![3, 7, 11].includes(a)) {
         finalGrid[a].addEventListener("click", () => {
         screenDiv.textContent = finalGrid[a].textContent;
         });
+        }
+        //how can i go into a child div
+        else {
+            // Get all child divs of the parent div at index a
+            const childDivs = finalGrid[a].querySelectorAll("div");
+            // Loop through each child div and add event listeners
+            childDivs.forEach(child => {
+                child.addEventListener("click", () => {
+                    screenDiv.textContent = child.textContent; // Use the child div's textContent
+                });
+            });
+        }
     }
 
 }
