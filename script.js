@@ -39,3 +39,8 @@ function operate(num1, operator, num2) {
         return "Please enter in +,-,*, or /"
     }
 }
+
+const container = document.querySelector("#container");
+const screenDiv = document.createElement("div");
+screenDiv.id = "screenDiv";
+container.appendChild(screenDiv);

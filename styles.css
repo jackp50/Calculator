@@ -1,0 +1,15 @@
+#container {
+    border: 3px solid rebeccapurple;
+    position: relative;
+}
+
+#container > div {
+    border: 3px solid seagreen;
+}
+
+#screenDiv {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 6px;
+}
