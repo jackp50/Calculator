@@ -9,14 +9,15 @@
     border: 3px solid seagreen;
 }
 
-#screenDiv {
+#screen-div {
     position: absolute;
     top: 0;
     width: 100%;
     height: auto;
+    display: flex;
 }
 
-#gridParent {
+#grid-parent {
     
     display: flex;
     width: 500px;
@@ -31,26 +32,26 @@
     width: 100px;
 }
 
-#subtractButton {
+#subtract-button {
     border: 3px solid pink;
 }
 
-#addButton {
+#add-button {
     border: 3px solid pink;
 }
 
-#multiplyButton {
+#multiply-button {
     border: 3px solid pink;
 }
 
-#divideButton {
+#divide-button {
     border: 3px solid pink;
 }
 
-#equalButton {
+#equal-button {
     border: 3px solid pink;
 }
 
-#clearButton {
+#clear-button {
     border: 3px solid pink;
 }
